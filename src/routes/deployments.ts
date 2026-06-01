@@ -2,8 +2,8 @@ import { Router, type Router as ExpressRouter } from 'express';
 import { z } from 'zod';
 import type { Kysely } from 'kysely';
 import type { Database } from '@vantage/db';
-import type { AuthenticatedRequest } from '@vantage/api/middleware/auth';
-import type { ApiKeyRequest } from '@vantage/api/middleware/api-key-auth';
+import type { AuthenticatedRequest } from '../types';
+import type { ApiKeyRequest } from '../types';
 
 export const createDeploymentSchema = z.object({
   name: z.string().optional(),
