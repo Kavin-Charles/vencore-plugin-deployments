@@ -1,7 +1,7 @@
 // Marks 'running' deployments older than 24 h as 'cancelled'.
 // Prevents zombie records from staying in the running state if CI never calls PATCH.
 import type { Kysely } from 'kysely';
-import type { Database } from '@vantage/db';
+import type { Database } from '@vencore/db';
 
 const INTERVAL_MS = 60 * 60 * 1_000; // 1 hour
 const STALE_THRESHOLD_MS = 24 * 60 * 60 * 1_000; // 24 hours
