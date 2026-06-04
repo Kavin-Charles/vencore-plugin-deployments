@@ -1,6 +1,6 @@
 import { Router, type Response } from 'express';
 import type { Kysely } from 'kysely';
-import type { Database } from '@vantage/db';
+import type { Database } from '@vencore/db';
 import { createDeploymentsRouter } from './routes/deployments';
 
 function serveUi(res: Response) {
@@ -41,7 +41,7 @@ tr:hover td{background:#f7f6f2}
 </header>
 <div class="content" id="content"><div class="empty">Loading…</div></div>
 <script>
-const BASE = '/api/plugins/route/com.vantage.deployments';
+const BASE = '/api/plugins/route/com.vencore.deployments';
 let TOKEN = null;
 
 window.addEventListener('message', e => {

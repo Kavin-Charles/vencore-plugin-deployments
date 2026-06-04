@@ -1,7 +1,7 @@
-import type { PluginManifest } from '@vantage/plugin-types';
+import type { PluginManifest } from '@vencore/plugin-types';
 
 export const manifest: PluginManifest = {
-  id: 'com.vantage.deployments',
+  id: 'com.vencore.deployments',
   name: 'Deployments',
   version: '1.0.0',
   description: 'Track CI/CD deployments per server. Ingest from webhooks, agents, or manually.',
